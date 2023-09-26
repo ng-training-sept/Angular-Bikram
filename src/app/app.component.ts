@@ -9,6 +9,7 @@ import { NewcardComponent } from './components/newcard/newcard.component';
 import { BikramComponent } from './components/bikram/bikram.component';
 import { ImpureDemoPipe } from './pipes/impure-demo.pipe';
 import { HeaderComponent } from './components/header/header.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
     CardComponent,
     CommonModule, MatButtonModule,MatCardModule , FormsModule,
    SpecialDirective,NewcardComponent,BikramComponent,DatePipe,
-   ImpureDemoPipe,AppComponent,HeaderComponent],
+   ImpureDemoPipe,AppComponent,HeaderComponent,RouterOutlet],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

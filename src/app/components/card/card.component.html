@@ -1,4 +1,4 @@
-<h3> Name:{{name}}</h3>
+<!-- <h3> Name:{{name}}</h3>
 <h4>
     Contact:{{contact}}
 </h4>
@@ -13,7 +13,7 @@
     <button [disabled]="isbuttonDisabled" (click)="onLike()"> Button</button>
     <p>Button is {{isbuttonDisabled? 'disabled': 'enabled'}}</p>
     <button [disabled]="togglebutton" (click)="ontoggle()">Toggle</button>
-</div>
+</div> -->
 <!-- <mat-card class="card">
   <mat-card-header>
     <mat-card-subtitle>{{likeCount}} Likes</mat-card-subtitle>
@@ -61,7 +61,7 @@
   <button mat-raised-button color="primary" (click)="onAddCard(cardTitle.value)">Add Card</button>
 </section>  -->
 
- <p>The hero's birthday is {{ birthday | date:"MM/dd/yy" }} </p> 
+ <!-- <p>The hero's birthday is {{ birthday | date:"MM/dd/yy" }} </p> 
 
 <p>the amount is :{{ amount | currency:'EUR':'Euros '}}</p>
 
@@ -78,4 +78,21 @@
     <h5 class="card-title">{{ cardTitles }}</h5>
     <button class="btn btn-danger" (click)="onDeleteClick()">Delete</button>
   </div>
+</div> -->
+
+<div class="card-container">
+  <mat-card class="card" *ngFor="let card of cards">
+    <mat-card-header>
+      <mat-card-title>{{ card.name }}</mat-card-title>
+      <mat-card-subtitle>{{ card.price }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="card.imageUrl" alt="card">
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-card-actions>
+        <button mat-button color="primary" (click)="goToItemDetails(card)">Details</button>
+      </mat-card-actions>
+    </mat-card-actions>
+  </mat-card>
 </div>

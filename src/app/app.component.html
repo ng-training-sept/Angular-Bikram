@@ -1,9 +1,12 @@
 <!-- <app-card [titles]="cardsTitle"></app-card>
 <app-card [titles]="cardsTitle" (titleEvent$)="addCard($event)"></app-card> -->
-<app-newcard></app-newcard>
+<!-- <app-newcard></app-newcard>
 <app-bikram></app-bikram>
 <div *ngFor="let cardTitle of cardList; let i = index">
     <app-card [cardTitles]="[cardTitle]" (deleteCard)="onDeleteCard(i)"></app-card>
-  </div>
+  </div> -->
 
 
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <!-- <app-card [titles]="persons" (titleEvent$)="addCard($event)"></app-card> -->
