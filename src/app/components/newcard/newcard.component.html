@@ -1,0 +1,13 @@
+<p>newcard works!</p>
+
+
+<input [(ngModel)]="Username">
+
+<button [disabled]="Username===''" (click)="resetInputField()"> Check Button</button>  
+<h2 *ngIf="Username.length>0">
+    
+     <p>{{Username}}</p>
+    
+</h2>
+
+

@@ -1,0 +1,20 @@
+<div>
+    <h2>User Information</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Address</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of filterUser">
+            
+          <td>{{ user.username }}</td>
+          <td>{{ user.address }}</td>
+          <td>{{ user.age }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
