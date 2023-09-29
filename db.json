@@ -41,6 +41,13 @@
       "description": "test 2",
       "price": 603.55,
       "imageUrl": ""
+    },
+    {
+      "id": "test 3",
+      "name": "Test 3",
+      "description": "test 3",
+      "price": 603.55,
+      "imageUrl": ""
     }
   ],
   "grocery": [
